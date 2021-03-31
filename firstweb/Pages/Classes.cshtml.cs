@@ -10,7 +10,7 @@ namespace NetOnWebPages
 {
     public class ClassesModel : PageModel
     {
-        public Classes Classes { get; set; }
+        public Class Class { get; set; }
 
         public void OnGet()
         {
@@ -22,7 +22,7 @@ namespace NetOnWebPages
 
             //var Anakin = new Teacher ("Anakin", 1 , "Apollo");
 
-            var Classes = new Classes (1, "Apollo", Students , "Anakin");
+            Class = new Class (1, "Apollo", Students, "Anakin");
         }
     }
 }

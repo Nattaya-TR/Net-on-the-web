@@ -5,18 +5,18 @@
 
 <h1>Class</h1>
 
-<p>Class Id : @Model.Classes.ClassId</p>
-<p>Class Name : @Model.Classes.ClassName</p>
-<p>Teacher : @Model.Classes.Teacher</p>
+<p>Class Id : @Model.Class.ClassId</p>
+<p>Class Name : @Model.Class.ClassName</p>
+<p>Teacher : @Model.Class.Teacher</p>
 
-<p>Students</p>
+<p>Students :</p>
 <table class="table mt-5">
     <tr>
         <td>ID</td>
         <td>Name</td>
     </tr>
 
-    @foreach (var Student in @Model.Classes.Students)
+    @foreach (var Student in @Model.Class.Students)
     {
         <tr>
             <td>@Student.Id</td>
