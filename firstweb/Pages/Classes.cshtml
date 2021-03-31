@@ -1,0 +1,26 @@
+﻿@page
+@model NetOnWebPages.ClassesModel
+@{
+}
+
+<h1>Class</h1>
+
+<p>Class Id : @Model.Classes.ClassId</p>
+<p>Class Name : @Model.Classes.ClassName</p>
+<p>Teacher : @Model.Classes.Teacher</p>
+
+<p>Students</p>
+<table class="table mt-5">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+    </tr>
+
+    @foreach (var Student in @Model.Classes.Students)
+    {
+        <tr>
+            <td>@Student.Id</td>
+            <td>@Student.Name</td>
+        </tr>
+    }
+</table>

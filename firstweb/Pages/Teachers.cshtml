@@ -1,0 +1,23 @@
+﻿@page
+@model NetOnWebPages.TeachersModel
+@{
+}
+
+<h1>Teacher</h1>
+
+<table class="table mt-5">
+    <tr>
+        <th>Name</th>
+        <th>Class Id</th>
+        <th>Class Name</th>
+    </tr>
+
+    @foreach (var Teacher in @Model.Teachers)
+    {
+        <tr>
+            <td>@Teacher.TeacherName</td>
+            <td>@Teacher.ClassId</td>
+            <td>@Teacher.ClassName</td>
+        </tr>
+    }
+</table>
